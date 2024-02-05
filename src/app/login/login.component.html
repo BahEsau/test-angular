@@ -1,0 +1,48 @@
+<body>
+    
+
+<main class="main">
+    <div class="content">
+      <div class="left-side">
+        <h1> {{ titleLogin }}</h1>
+      </div>
+    </div>
+    <div class="form">
+
+        <form action=""> 
+            <label for="first"> 
+                  Username: 
+              </label> 
+            <input type="text" 
+                   id="first"
+                   name="first" 
+                   placeholder="Enter your Username" required> 
+  
+            <label for="password"> 
+                  Password: 
+              </label> 
+            <input type="password"
+                   id="password" 
+                   name="password" 
+                   placeholder="Enter your Password" required> 
+  
+            <div class="wrap"> 
+                <button type="submit" 
+                        onclick="solve()"> 
+                        <a href="/landing" 
+                        style="text-decoration: none; color:white;"> 
+                         Login
+                     </a> 
+                </button> 
+            </div> 
+        </form> 
+        <p>Not registered?  
+              <a href="/register" 
+               style="text-decoration: none;"> 
+                Create an account 
+            </a> 
+        </p> 
+
+    </div>
+  </main>
+</body>

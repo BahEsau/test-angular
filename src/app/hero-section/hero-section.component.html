@@ -1,0 +1,56 @@
+<body>
+    <div class="main">
+        
+        <span class="hero">
+            <img src="/assets/images/landing.jpg" alt="image not available" >
+            <div class="profileInfo">
+             <h3>Profile info</h3>
+             <p> Name: {{name}} <br>
+              Email: {{email}} <br>
+              Phone: {{phone}}
+            </p>
+            </div>
+             <div class="table">
+                <h2>Login History</h2>
+                <div class="mat-elevation-z8">
+                    <table mat-table [dataSource]="dataSource">
+                  
+                      <!-- number Column -->
+                      <ng-container matColumnDef="position">
+                        <th mat-header-cell *matHeaderCellDef> No. </th>
+                        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                      </ng-container>
+                  
+                      <!-- date Column -->
+                      <ng-container matColumnDef="date">
+                        <th mat-header-cell *matHeaderCellDef>Last logins Date </th>
+                        <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+                      </ng-container>
+                  
+                  
+                      <!-- login success Column -->
+                      <ng-container matColumnDef="success">
+                        <th mat-header-cell *matHeaderCellDef> Login success </th>
+                        <td mat-cell *matCellDef="let element"> {{element.success}} </td>
+                      </ng-container>
+                  
+                      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                  
+                    <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                                   showFirstLastButtons
+                                   aria-label="Select page of periodic elements">
+                    </mat-paginator> -->
+                    <mat-paginator [length]="100"
+                        [pageSize]="5"
+                        [pageSizeOptions]="[5, 10, 25, 100]"
+                        aria-label="Select page">
+                  </mat-paginator>
+
+                  </div>
+                  
+             </div>
+        </span>
+    </div>
+</body>

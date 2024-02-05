@@ -1,0 +1,35 @@
+.hero { 
+    height: 800px;
+    width: 100%;
+    position: relative; 
+} 
+.hero img{ 
+    height: 600px;
+    width: 100%; 
+} 
+.hero .table { 
+    position: absolute;
+    margin-top: -45%;
+    margin-left: 30%;
+    height: 400px;
+    width: 800px; 
+} 
+.hero .profileInfo { 
+    position: absolute;
+    margin-top: -45%;
+    margin-left: 3%;
+    height: 100px;
+    width: 200px; 
+
+} 
+.hero .profileInfo h3{ 
+   font-weight: bold;
+
+} 
+.hero P { 
+   
+    /* margin-left: 3%; */
+    background-color: white;
+    font-weight: light;
+
+} 
