@@ -1,15 +1,16 @@
 
 <body>
-    <div class="homeIcon">
-        <a href="/landing">
+    <app-nav-bar/>
+    <router-outlet></router-outlet>
+    <!-- <div class="homeIcon">
+        <a [routerLink]="['/landing']">
         <button mat-icon-button color="primary"  aria-label="Example icon button with a home icon">
             <mat-icon> home</mat-icon>
-          </button></a>
-          <router-outlet></router-outlet>
-    </div>   
+          </button></a>    
+    </div>    -->
     <div class="main">
         <p>Edit your profile information</p>
-        <form action="#">
+        <form >
             <div class="container">
             
             <hr>
@@ -29,8 +30,9 @@
             <label for="psw-repeat"><b>Repeat New Password</b></label>
             <input type="password" placeholder="Repeat new Password" name="psw-repeat" id="psw-repeat" required>
             <hr>
-        
-            <button type="submit" class="update">Update</button>
+            <a [routerLink]="['/landing']">
+                <button type="submit" class="update">Update</button>
+            </a>
             </div>
         
         

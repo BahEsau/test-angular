@@ -29,15 +29,15 @@
             <div class="wrap"> 
                 <button type="submit" 
                         onclick="solve()"> 
-                        <a href="/landing" 
-                        style="text-decoration: none; color:white;"> 
+                        <a [routerLink]="['/landing']"
+                          style="text-decoration: none; color:white"> 
                          Login
-                     </a> 
+                        </a> 
                 </button> 
             </div> 
         </form> 
         <p>Not registered?  
-              <a href="/register" 
+              <a  [routerLink]="['/register']"
                style="text-decoration: none;"> 
                 Create an account 
             </a> 
